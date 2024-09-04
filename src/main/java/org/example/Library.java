@@ -12,6 +12,14 @@ public class Library {
         }
     }
 
+    public int decIfTrue(int n, boolean condition) {
+        if (condition) {
+            return n - 1;
+        } else {
+            return n;
+        }
+    }
+
     public static native int nativeIncIfTrue(int n, boolean condition);
 
     static {
