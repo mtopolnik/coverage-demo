@@ -13,6 +13,13 @@ public class LibraryTest {
     }
 
     @Test
+    public void testDecWhenTrue() {
+        var lib = new Library();
+        var result = lib.incIfTrue(1, true);
+        Assert.assertEquals(0, result);
+    }
+
+    @Test
     public void testIncWhenFalse() {
         var lib = new Library();
         var result = lib.incIfTrue(1, false);
